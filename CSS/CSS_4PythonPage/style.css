@@ -1,0 +1,199 @@
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0px none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+    }
+h1, h2, h3, h4 {
+    font-weight: bold;
+}
+h1, h2, h3, h4, p, a, li, input {
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+}
+p, li {
+    padding: 5px 0px;
+}
+a {
+    color: inherit;
+}
+.yellow {
+    color: gold;
+}
+.skyblue {
+    color: skyblue;
+}
+.smalltext {
+    font-size: 14px;
+}
+.smallestext {
+    font-size: 12px;
+}
+.noline {
+    text-decoration: none;
+}
+.top, .mid, .footer {
+    width: 970px;
+    margin: 0px auto;
+}
+.top {
+    background-color: steelblue; /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(circle, rgba(40,90,130, 0.85), rgba(40,90,130,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(circle, rgba(40,90,130,.85), rgba(40,90,130,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-radial-gradient(circle, rgba(40,90,130,.85), rgba(40,90,130,1)); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(circle, rgba(40,90,130, 0.85), rgba(40,90,130,1)); /* Standard syntax */
+    padding: 20px 20px 30px 20px;
+    border-bottom: 4px rgba(20,40,50,.85) solid;
+}
+.header img {
+    margin: 10px 150px 0px 20px;
+    height: 125px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.headright {
+    width: 350px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.headright ul {
+    margin-left: 120px;
+    margin-bottom: 5px;
+}
+.headright li {
+    display: inline;
+    text-align: center;
+}
+.search {
+    padding: 20px 15px;
+    background-color: rgba(50,50,50,.9);
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px black;    
+    text-align: center;
+}
+.search input {
+    width: 225px;
+    height: 40px;
+    margin: 0px 5px;
+    text-align: center;
+    border: 2px inset grey;
+    color: black;
+}
+.searchbutton {
+    padding: 10px;
+    background-color: rgb(40,90,130);
+    border: 2px outset silver;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px black;
+    color: white;
+}
+.navbar {
+    margin: 50px 25px 35px 75px;
+    background-color: steelblue;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+    text-align: center;
+    padding: 15px;
+}
+.navbar li {
+    display: inline;
+    font-size: 24px;
+    margin: 0px 15px;
+}
+.references {
+    display: inline-block;
+    vertical-align: middle;
+    width: 200px;
+    margin: 0px 35px 0px 100px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 150%;
+}
+.references ul {
+    list-style: none;
+}
+.references li::before {
+    content: '>>';
+    font-size: 11px;
+    font-family: Impact;
+    font-weight: bolder;
+    color: gold;
+    display: inline-block;
+    vertical-align: middle;
+    width: 3em;
+    margin-left: -3em;
+}
+
+.splashtext {
+    display: inline-block;
+    vertical-align: middle;
+    width: 595px;
+    text-align: center;
+    font-size: 18px;
+}
+.largesplash {
+    font-size: 24px;
+    line-height: 175%;
+    font-style: italic;
+}
+.mediumsplash {
+    font-size: 22px;
+    line-height: 125%;
+}
+.midcontent {
+    display: inline-block;
+    vertical-align: top;
+    width: 475px;
+    padding: 10px 0px;
+    text-align: center;
+}
+hr {
+    display: block;
+    margin: 0.5em auto;
+    height: 4px;
+    width: 440px;
+    background-color: steelblue;
+    border: 0.5px outset silver;
+}
+.midcontent h3 {
+    font-size: 22px;
+    color: black;
+}
+.midcontent p {
+    color: black;
+    width: 400px;
+    margin: 0px auto;
+}
+.contentlist {
+    width: 300px;
+    margin-left: 75px;
+    font-size: 18px;
+}
+.contentlist ul {
+    list-style: square;
+}
+.contentlist li {
+    color: black;
+}
+.footer {
+    background-color: steelblue; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(0deg, rgba(40,90,130, 0.65), rgba(40,90,130,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(0deg, rgba(40,90,130,.65), rgba(40,90,130,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(0deg, rgba(40,90,130,.65), rgba(40,90,130,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(0deg, rgba(40,90,130, 0.65), rgba(40,90,130,1)); /* Standard syntax */
+    padding: 75px 20px 10px 20px;
+    text-align: center;
+}
+.footer ul {
+    margin-bottom: 20px;
+}
+.footer li {
+    display: inline;
+    margin: 0px 30px;
+    font-size: 22px;
+}
