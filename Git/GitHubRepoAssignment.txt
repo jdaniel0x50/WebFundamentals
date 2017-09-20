@@ -1,0 +1,12 @@
+<created GitRepoAssignment on GitHub>
+cd Desktop\DojoAssignments\WebFundamentals\Git
+md GitHubRepoAssignment
+dir
+cd GitHubRepoAssignment
+git init
+copy nul readme.txt
+git status
+git add .
+git commit -m "first commit; added readme"
+git remote add origin https://github.com/jdjustdata/GitHubRepoAssignment.git
+git push -u origin master

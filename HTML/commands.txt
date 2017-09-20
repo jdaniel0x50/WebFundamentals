@@ -1,0 +1,135 @@
+Microsoft Windows [Version 10.0.15063]
+(c) 2017 Microsoft Corporation. All rights reserved.
+
+
+
+\>cd desktop
+
+\Desktop>mkdir test
+
+\Desktop>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 5CBD-F8F3
+
+ Directory of C:\Users\jvod4\Desktop
+
+09/18/2017  04:37 PM    <DIR>          .
+09/18/2017  04:37 PM    <DIR>          ..
+09/18/2017  09:37 AM             2,310 Mattermost.lnk
+09/18/2017  04:37 PM    <DIR>          test
+               1 File(s)          2,310 bytes
+               3 Dir(s)  254,779,768,832 bytes free
+
+\Desktop>cd test
+
+\Desktop\test>copy nul index.html
+        1 file(s) copied.
+
+\Desktop\test>copy nul style.css
+        1 file(s) copied.
+
+\Desktop\test>copy nul commands.txt
+        1 file(s) copied.
+
+\Desktop\test>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 5CBD-F8F3
+
+ Directory of C:\Users\jvod4\Desktop\test
+
+09/18/2017  04:38 PM    <DIR>          .
+09/18/2017  04:38 PM    <DIR>          ..
+09/18/2017  04:38 PM                 0 commands.txt
+09/18/2017  04:38 PM                 0 index.html
+09/18/2017  04:38 PM                 0 style.css
+               3 File(s)              0 bytes
+               2 Dir(s)  254,780,674,048 bytes free
+
+\Desktop\test>copy index.html index_2.html
+        1 file(s) copied.
+
+\Desktop\test>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 5CBD-F8F3
+
+ Directory of C:\Users\jvod4\Desktop\test
+
+09/18/2017  04:38 PM    <DIR>          .
+09/18/2017  04:38 PM    <DIR>          ..
+09/18/2017  04:38 PM                 0 commands.txt
+09/18/2017  04:38 PM                 0 index.html
+09/18/2017  04:38 PM                 0 index_2.html
+09/18/2017  04:38 PM                 0 style.css
+               4 File(s)              0 bytes
+               2 Dir(s)  254,780,608,512 bytes free
+
+\Desktop\test>del /p style.css
+\Desktop\test\style.css, Delete (Y/N)? y
+
+\Desktop\test>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 5CBD-F8F3
+
+ Directory of C:\Users\jvod4\Desktop\test
+
+09/18/2017  04:39 PM    <DIR>          .
+09/18/2017  04:39 PM    <DIR>          ..
+09/18/2017  04:38 PM                 0 commands.txt
+09/18/2017  04:38 PM                 0 index_2.html
+09/18/2017  04:38 PM                 0 index.html
+               3 File(s)              0 bytes
+               2 Dir(s)  254,778,613,760 bytes free
+
+\Desktop\test>cd ..
+
+\Desktop>md destination
+
+\Desktop>move .\test\index_2.html .\destination\
+        1 file(s) moved.
+
+\Desktop>cd test
+
+\Desktop\test>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 5CBD-F8F3
+
+ Directory of C:\Users\jvod4\Desktop\test
+
+09/18/2017  04:46 PM    <DIR>          .
+09/18/2017  04:46 PM    <DIR>          ..
+09/18/2017  04:38 PM                 0 commands.txt
+09/18/2017  04:38 PM                 0 index.html
+               2 File(s)              0 bytes
+               2 Dir(s)  254,775,603,200 bytes free
+
+\Desktop\test>cd ..\destination
+
+\Desktop\destination>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 5CBD-F8F3
+
+ Directory of C:\Users\jvod4\Desktop\destination
+
+09/18/2017  04:46 PM    <DIR>          .
+09/18/2017  04:46 PM    <DIR>          ..
+09/18/2017  04:38 PM                 0 index_2.html
+               1 File(s)              0 bytes
+               2 Dir(s)  254,775,603,200 bytes free
+
+\Desktop\destination>cd ..
+
+\Desktop>rd /s .\destination
+.\destination, Are you sure (Y/N)? y
+
+\Desktop>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 5CBD-F8F3
+
+ Directory of C:\Users\jvod4\Desktop
+
+09/18/2017  04:47 PM    <DIR>          .
+09/18/2017  04:47 PM    <DIR>          ..
+09/18/2017  09:37 AM             2,310 Mattermost.lnk
+09/18/2017  04:46 PM    <DIR>          test
+               1 File(s)          2,310 bytes
+               3 Dir(s)  254,775,447,552 bytes free

@@ -1,0 +1,26 @@
+cd desktop
+md gittest
+dir
+cd gittest
+git init
+copy nul index.html
+copy nul styles.css
+copy nul aboutMe.txt
+git add .
+git status
+git commit -m "initialized; created 3 new files"
+<changed aboutMe bio in text editor>
+git add .
+git status
+git commit -m "added bio information to aboutMe.txt"
+<added favorite movie to aboutMe.txt in text editor>
+git add .
+git status
+git commit -m "added favorite movie to aboutMe.txt"
+git log
+git revert -n "30134c536ec1ed4cce3fc22a0ed4f2f4954a08a7"
+git commit -m "reverted to remove moview; 30134c536ec1ed4cce3fc22a0ed4f2f4954a08a7"
+git log
+<changed aboutMe in text editor to favorite book>
+git add .
+git commit -m "added favorite book to aboutMe.txt"

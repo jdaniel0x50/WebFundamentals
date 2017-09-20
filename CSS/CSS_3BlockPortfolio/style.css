@@ -1,0 +1,176 @@
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0px green dashed;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+    }
+h1, h2, h3, h4 {
+    font-weight: bold;
+}
+h2, h3, h4, p, a {
+    font-family: Helvetica, Arial, sans-serif;
+}
+p {
+    padding: 10px 0px;
+}
+a {
+    color: inherit;
+}
+.title1 {
+    height: 50px;
+    background-color: grey; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(darkgrey, grey, darkgrey); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(darkgrey, grey, darkgrey); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(darkgrey, grey, darkgrey); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(darkgrey, grey, darkgrey); /* Standard syntax */
+    color: white;
+    font-weight: bolder;
+    font-size: 24px;
+    line-height: 50px;
+    padding: 0px 15px;
+}
+.title2 {
+    height: 45px;
+    background-color: grey; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(darkgrey, grey, darkgrey); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(darkgrey, grey, darkgrey); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(darkgrey, grey, darkgrey); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(darkgrey, grey, darkgrey); /* Standard syntax */
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 45px;
+    padding: 0px 15px;
+}
+#header, #wrapper, #footer {
+    width: 975px;
+    margin: 0px auto;
+}
+#header, #footer {
+    padding: 0px 25px;
+}
+#header {
+    height: 80px;
+    background-color: gainsboro; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(169,169,169,0), rgba(169,169,169,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(169,169,169,0), rgba(169,169,169,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(169,169,169,0), rgba(169,169,169,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(169,169,169,0), rgba(169,169,169,1)); /* Standard syntax */
+    }
+#header_name {
+    width: 300px;
+    font: bolder 40px/80px "Comic Sans MS", sans-serif;
+    display: inline-block;
+    vertical-align: top;
+}
+#header_subtitle {
+    width: 665px;
+    font: bolder 28px/80px Arial, sans-serif;
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+}
+#wrapper{
+    padding: 25px;
+    background-color: indigo; /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(circle, rgba(31, 13, 44, 0.5), rgba(31, 13, 44,1)); /* Safari */
+    background: -o-radial-gradient(circle, rgba(31, 13, 44,0.5), rgba(31, 13, 44,1)); /* Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(circle, rgba(31, 13, 44,0.5), rgba(31, 13, 44,1)); /* Firefox 3.6 to 15 */
+    background: radial-gradient(circle, rgba(31, 13, 44,0.5), rgba(31, 13, 44,1)); /* Standard syntax */
+    }
+#profile {
+    height: auto;
+    }
+#profile_img {
+    display: inline-block;
+    background-color: thistle;
+    vertical-align: top;
+    padding: 5px;
+}
+#profile_img img {
+    width: 475px;
+    margin: 0px auto;
+}
+#profile_about {
+    width: 450px;
+    display: inline-block;
+    margin-left: 30px;
+    background-color: lavender;
+    vertical-align: top;
+}
+#profile_text {
+    margin: 10px;
+    line-height: 125%;
+}
+#showcase {
+    height: auto;
+}
+.subcontent {    
+    width: 303px;
+    height: 785px;
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: lavender;
+    vertical-align: top;
+    }
+.subcontent:nth-child(2) {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.product_img img {
+    width: 303px;
+}
+.product_text {
+    height: 225px;
+    padding: 0px 15px;
+    line-height: 125%;
+}
+.product_tech {
+    height: 210px;
+    padding: 10px;
+    margin: 0px auto;
+}
+.product_tech img {
+    width: 56px;
+    margin: 5px;    
+}
+.product_more {
+    height: 75px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+.product_button {
+    display: inline;
+    margin: auto;
+    padding: 10px;
+    background-color: cadetblue;
+    border-radius: 10px;
+    border: 0.5px solid darkolivegreen;
+    box-shadow: 5px 5px 5px darkgray;
+}
+.product_button a {
+    text-decoration: none;
+}
+#footer {
+    height: 125px;
+    display: block;
+    background-color: lavenderblush;
+    padding: 0px 25px;
+    font: 18px/40px Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+#footer img {
+    width: 20px;
+}
+#footer a {
+    font-style: italic;
+}
