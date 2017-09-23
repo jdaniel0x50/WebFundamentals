@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Periodic Table</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="wrapper"> 
+        <!-- NOTE: the following <p> and <li> closing and opening tags deliberately appear on the same line 
+            in order to remove "white space" problems that occur with HTML carriage returns. This was disrupting
+            the block alignment between the header (li) row and the in-line blocks <p>.
+            Reference: https://stackoverflow.com/questions/1801589/how-do-i-remove-extra-margin-space-generated-by-inline-blocks -->
+        <ul class="rowheaders redtext">
+            <li class="allboxes headingbox">Group<br>Period</li><li class="allboxes rowheadbox">
+                1</li><li class="allboxes rowheadbox">
+                    2</li><li class="allboxes rowheadbox">
+                        3</li><li class="allboxes rowheadbox">
+                            4</li><li class="allboxes rowheadbox">
+                                5</li><li class="allboxes rowheadbox">
+                                    6</li><li class="allboxes rowheadbox">
+                                        7</li>
+        </ul>
+        <div class="maintable">
+            <ul class="header redtext">
+                <li class="allboxes headingbox">1</li><li class="allboxes headingbox">
+                    2</li><li class="allboxes headingbox">
+                        3</li><li class="allboxes headingbox">
+                            4</li><li class="allboxes headingbox">
+                                5</li><li class="allboxes headingbox">
+                                    6</li><li class="allboxes headingbox">
+                                        7</li><li class="allboxes headingbox">
+                                            8</li><li class="allboxes headingbox">
+                                                9</li><li class="allboxes headingbox">
+                                                    10</li><li class="allboxes headingbox">
+                                                        11</li><li class="allboxes headingbox">
+                                                            12</li><li class="allboxes headingbox">
+                                                                13</li><li class="allboxes headingbox">
+                                                                    14</li><li class="allboxes headingbox">
+                                                                        15</li><li class="allboxes headingbox">
+                                                                            16</li><li class="allboxes headingbox">
+                                                                                17</li><li class="allboxes headingbox">
+                                                                                    18</li>
+            </ul>
+            <div class="alkalimetals">
+                <p class="allboxes bluebox">1<br><span class="elname">H</span><br>1.008</p><p class="allboxes bluebox">
+                    3<br><span class="elname">Li</span><br>6.94</p><p class="allboxes bluebox">
+                        4<br><span class="elname">Be</span><br>9.0122</p><p class="allboxes bluebox">
+                            11<br><span class="elname">Na</span><br>22.990</p><p class="allboxes bluebox">
+                                12<br><span class="elname">Mg</span><br>24.305</p><p class="allboxes bluebox">
+                                    19<br><span class="elname">K</span><br>39.098</p><p class="allboxes bluebox">
+                                        20<br><span class="elname">Ca</span><br>40.078</p><p class="allboxes bluebox">
+                                            37<br><span class="elname">Rb</span><br>85.468</p><p class="allboxes bluebox">
+                                                38<br><span class="elname">Sr</span><br>87.62</p><p class="allboxes bluebox">
+                                                    55<br><span class="elname">Cs</span><br>132.91</p><p class="allboxes bluebox">
+                                                        56<br><span class="elname">Ba</span><br>137.33</p><p class="allboxes bluebox">
+                                                            87<br><span class="elname">Fr</span><br>[223.02]</p><p class="allboxes bluebox">
+                                                                88<br><span class="elname">Ra</span><br>[226.03]</p>
+            </div>
+            <div class="metals">
+                <p class="allboxes redbox">21<br><span class="elname">Sc</span><br>44.9559</p><p class="allboxes redbox">
+                    22<br><span class="elname">Ti</span><br>47.867</p><p class="allboxes redbox">
+                        23<br><span class="elname">V</span><br>50.9415</p><p class="allboxes redbox">
+                            24<br><span class="elname">Cr</span><br>51.996</p><p class="allboxes redbox">
+                                25<br><span class="elname">Mn</span><br>54.938</p><p class="allboxes redbox">
+                                    26<br><span class="elname">Fe</span><br>55.845</p><p class="allboxes redbox">
+                                        27<br><span class="elname">Co</span><br>58.9332</p><p class="allboxes redbox">
+                                            28<br><span class="elname">Ni</span><br>58.6934</p><p class="allboxes redbox">
+                                                29<br><span class="elname">Cu</span><br>63.546</p><p class="allboxes redbox">
+                                                    30<br><span class="elname">Zn</span><br>65.39</p><p class="allboxes redbox">
+                                                        39<br><span class="elname">Y</span><br>88.9059</p><p class="allboxes redbox">
+                                                            40<br><span class="elname">Zr</span><br>91.224</p><p class="allboxes redbox">
+                                                                41<br><span class="elname">Nb</span><br>92.9064</p><p class="allboxes redbox">
+                                                                    42<br><span class="elname">Mo</span><br>95.94</p><p class="allboxes redbox">
+                                                                        43<br><span class="elname">Tc</span><br>98</p><p class="allboxes redbox">
+                                                                            44<br><span class="elname">Ru</span><br>101.07</p><p class="allboxes redbox">
+                                                                                45<br><span class="elname">Rh</span><br>102.9055</p><p class="allboxes redbox">
+                                                                                    46<br><span class="elname">Pd</span><br>106.42</p><p class="allboxes redbox">
+                                                                                        47<br><span class="elname">Ag</span><br>107.8682</p><p class="allboxes redbox">
+                                                                                            48<br><span class="elname">Cd</span><br>112.411</p><p class="allboxes redbox">
+                                                                                                71<br><span class="elname">Lu</span><br>174.967</p><p class="allboxes redbox">
+                                                                                                    72<br><span class="elname">Hf</span><br>178.49</p><p class="allboxes redbox">
+                                                                                                        73<br><span class="elname">Ta</span><br>180.9479</p><p class="allboxes redbox">
+                                                                                                            74<br><span class="elname">W</span><br>183.84</p><p class="allboxes redbox">
+                                                                                                                75<br><span class="elname">Re</span><br>186.207</p><p class="allboxes redbox">
+                                                                                                                    76<br><span class="elname">Os</span><br>190.23</p><p class="allboxes redbox">
+                                                                                                                        77<br><span class="elname">Ir</span><br>192.217</p><p class="allboxes redbox">
+                                                                                                                            78<br><span class="elname">Pt</span><br>195.078</p><p class="allboxes redbox">
+                                                                                                                                79<br><span class="elname">Au</span><br>196.9665</p><p class="allboxes redbox">
+                                                                                                                                    80<br><span class="elname">Hg</span><br>200.59</p><p class="allboxes redbox">
+                                                                                                                                        103<br><span class="elname">Lr</span><br>[262]</p><p class="allboxes redbox">
+                                                                                                                                            104<br><span class="elname">Rf</span><br>[261]</p><p class="allboxes redbox">
+                                                                                                                                                105<br><span class="elname">Db</span><br>[262]</p><p class="allboxes redbox">
+                                                                                                                                                    106<br><span class="elname">Sg</span><br>[266]</p><p class="allboxes redbox">
+                                                                                                                                                        107<br><span class="elname">Bh</span><br>[264]</p><p class="allboxes redbox">
+                                                                                                                                                            108<br><span class="elname">Hs</span><br>[277]</p><p class="allboxes redbox">
+                                                                                                                                                                109<br><span class="elname">Mt</span><br>[268]</p><p class="allboxes redbox">
+                                                                                                                                                                    110<br><span class="elname">Ds</span><br>[271]</p><p class="allboxes redbox">
+                                                                                                                                                                        111<br><span class="elname">Rg</span><br>[272]</p><p class="allboxes redbox">
+                                                                                                                                                                            112<br><span class="elname">Uub</span><br>[285]</p>
+            </div>
+            <div class="nonmetals">
+                <p class="allboxes yellowbox">2<br><span class="elname">He</span><br>4.0026</p><p class="allboxes yellowbox">
+                    5<br><span class="elname">B</span><br>10.811</p><p class="allboxes yellowbox">
+                        6<br><span class="elname">C</span><br>12.0107</p><p class="allboxes yellowbox">
+                            7<br><span class="elname">N</span><br>14.0067</p><p class="allboxes yellowbox">
+                                8<br><span class="elname">O</span><br>15.9994</p><p class="allboxes yellowbox">
+                                    9<br><span class="elname">F</span><br>18.9984</p><p class="allboxes yellowbox">
+                                        10<br><span class="elname">Ne</span><br>20.1797</p><p class="allboxes yellowbox">
+                                            13<br><span class="elname">Al</span><br>26.9815</p><p class="allboxes yellowbox">
+                                                14<br><span class="elname">Si</span><br>28.0855</p><p class="allboxes yellowbox">
+                                                    15<br><span class="elname">P</span><br>30.9738</p><p class="allboxes yellowbox">
+                                                        16<br><span class="elname">S</span><br>32.065</p><p class="allboxes yellowbox">
+                                                            17<br><span class="elname">Cl</span><br>35.453</p><p class="allboxes yellowbox">
+                                                                18<br><span class="elname">Ar</span><br>39.948</p><p class="allboxes yellowbox">
+                                                                    31<br><span class="elname">Ga</span><br>69.723</p><p class="allboxes yellowbox">
+                                                                        32<br><span class="elname">Ge</span><br>72.64</p><p class="allboxes yellowbox">
+                                                                            33<br><span class="elname">As</span><br>74.9216</p><p class="allboxes yellowbox">
+                                                                                34<br><span class="elname">Se</span><br>78.96</p><p class="allboxes yellowbox">
+                                                                                    35<br><span class="elname">Br</span><br>79.904</p><p class="allboxes yellowbox">
+                                                                                        36<br><span class="elname">Kr</span><br>83.8</p><p class="allboxes yellowbox">
+                                                                                            49<br><span class="elname">In</span><br>114.818</p><p class="allboxes yellowbox">
+                                                                                                50<br><span class="elname">Sn</span><br>118.71</p><p class="allboxes yellowbox">
+                                                                                                    51<br><span class="elname">Sb</span><br>121.76</p><p class="allboxes yellowbox">
+                                                                                                        52<br><span class="elname">Te</span><br>127.6</p><p class="allboxes yellowbox">
+                                                                                                            53<br><span class="elname">I</span><br>126.9045</p><p class="allboxes yellowbox">
+                                                                                                                54<br><span class="elname">Xe</span><br>131.293</p><p class="allboxes yellowbox">
+                                                                                                                    81<br><span class="elname">Tl</span><br>204.3833</p><p class="allboxes yellowbox">
+                                                                                                                        82<br><span class="elname">Pb</span><br>207.2</p><p class="allboxes yellowbox">
+                                                                                                                            83<br><span class="elname">Bi</span><br>208.9804</p><p class="allboxes yellowbox">
+                                                                                                                                84<br><span class="elname">Po</span><br>[209]</p><p class="allboxes yellowbox">
+                                                                                                                                    85<br><span class="elname">At</span><br>[210]</p><p class="allboxes yellowbox">
+                                                                                                                                        86<br><span class="elname">Rn</span><br>[222]</p><p class="allboxes yellowbox">
+                                                                                                                                            113<br><span class="elname">Uut</span><br>[284]</p><p class="allboxes yellowbox">
+                                                                                                                                                114<br><span class="elname">Uuq</span><br>[289]</p><p class="allboxes yellowbox">
+                                                                                                                                                    115<br><span class="elname">Uup</span><br>[288]</p><p class="allboxes yellowbox">
+                                                                                                                                                        116<br><span class="elname">Uuh</span><br>[292]</p><p class="allboxes yellowbox">
+                                                                                                                                                            117<br><span class="elname">Uus</span><br>[294]</p><p class="allboxes yellowbox">
+                                                                                                                                                                118<br><span class="elname">Uuo</span><br>[294]</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <ul class="bottomlabels">
+                <li class="redtext">*Lanthanoids<span class="textmarginleft1"> *</span></li>
+                <li class="redtext">**Actinoids<span class="textmarginleft2">**</span></li>
+            </ul>
+            <div class="noids">
+                <p class="allboxes greenbox">57<br><span class="elname">La</span><br>138.9055</p><p class="allboxes greenbox">
+                    58<br><span class="elname">Ce</span><br>140.116</p><p class="allboxes greenbox">
+                        59<br><span class="elname">Pr</span><br>140.9077</p><p class="allboxes greenbox">
+                            60<br><span class="elname">Nd</span><br>144.24</p><p class="allboxes greenbox">
+                                61<br><span class="elname">Pm</span><br>[145]</p><p class="allboxes greenbox">
+                                    62<br><span class="elname">Sm</span><br>150.36</p><p class="allboxes greenbox">
+                                        63<br><span class="elname">Eu</span><br>151.964</p><p class="allboxes greenbox">
+                                            64<br><span class="elname">Gd</span><br>157.25</p><p class="allboxes greenbox">
+                                                65<br><span class="elname">Tb</span><br>158.9253</p><p class="allboxes greenbox">
+                                                    66<br><span class="elname">Dy</span><br>162.5</p><p class="allboxes greenbox">
+                                                        67<br><span class="elname">Ho</span><br>164.9303</p><p class="allboxes greenbox">
+                                                            68<br><span class="elname">Er</span><br>167.259</p><p class="allboxes greenbox">
+                                                                69<br><span class="elname">Tm</span><br>168.9342</p><p class="allboxes greenbox">
+                                                                    70<br><span class="elname">Yb</span><br>173.04</p><p class="allboxes greenbox">
+                                                                        89<br><span class="elname">Ac</span><br>[227]</p><p class="allboxes greenbox">
+                                                                            90<br><span class="elname">Th</span><br>232.0381</p><p class="allboxes greenbox">
+                                                                                91<br><span class="elname">Pa</span><br>231.0359</p><p class="allboxes greenbox">
+                                                                                    92<br><span class="elname">U</span><br>238.0289</p><p class="allboxes greenbox">
+                                                                                        93<br><span class="elname">Np</span><br>[237]</p><p class="allboxes greenbox">
+                                                                                            94<br><span class="elname">Pu</span><br>[244]</p><p class="allboxes greenbox">
+                                                                                                95<br><span class="elname">Am</span><br>[243]</p><p class="allboxes greenbox">
+                                                                                                    96<br><span class="elname">Cm</span><br>[247]</p><p class="allboxes greenbox">
+                                                                                                        97<br><span class="elname">Bk</span><br>[247]</p><p class="allboxes greenbox">
+                                                                                                            98<br><span class="elname">Cf</span><br>[251]</p><p class="allboxes greenbox">
+                                                                                                                99<br><span class="elname">Es</span><br>[252]</p><p class="allboxes greenbox">
+                                                                                                                    100<br><span class="elname">Fm</span><br>[257]</p><p class="allboxes greenbox">
+                                                                                                                        101<br><span class="elname">Md</span><br>[258]</p><p class="allboxes greenbox">
+                                                                                                                            102<br><span class="elname">No</span><br>[259]</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
