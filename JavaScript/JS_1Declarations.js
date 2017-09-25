@@ -1,0 +1,13 @@
+var num0 = 0;
+var num1 = 10;
+var num2 = 20;
+var num3 = 30;
+var string1 = "mystring";
+var string2 = "another string";
+var string3 = "and another";
+var bool1 = TRUE;
+var bool2 = FALSE;
+var undef;
+console.log("The first four numbers are :" + num0 + ", " + num1 + ", " + num2 + ", " + num3);
+console.log("The three strings are ... string1: " + string1 + ", string2: " + string2 + ", string3: " + string3);
+console.log("and the booleans are " + bool1 + " and " + bool2);
