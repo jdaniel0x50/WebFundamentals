@@ -18,11 +18,12 @@ function overwriteArray(arr) {
             i--;
         }
     }
-    return arr;
+    return;
 }
 
 
 
 var arr = [1, "apple", -3, "orange", 0.5, 99.99, "coding", -100, "dojo", -0.5, "hello"];
 console.log(numbersOnly(arr));
-console.log(overwriteArray(arr));
+overwriteArray(arr);
+console.log(arr);
