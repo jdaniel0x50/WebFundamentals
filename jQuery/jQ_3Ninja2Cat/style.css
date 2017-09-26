@@ -1,0 +1,75 @@
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0px none;
+	outline: 0px;
+	padding: 0px;
+	margin: 0px;
+    }
+h1, h2, h3, h4 {
+    font-weight: bold;
+}
+h1, h2, h3, h4, p, a, li, input, button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1 {
+    font-size: 38px;
+    text-align: center;
+    margin: 15px;
+}
+p, li {
+    padding: 5px 0px;
+}
+a {
+    text-decoration: none;
+    color: #04aeda;
+}
+hr {
+    height: 3px;
+    width: 85%;
+    background-color: black;
+    margin: 20px 0px;
+}
+img {
+    display: block;
+    width: 500px;
+    margin: 20px auto;
+}
+.wrapper {
+    width: 975px;
+    margin: 0px auto;
+    padding: 20px;
+    text-align: center;
+}
+.wrapper button {
+    display: block;
+    vertical-align: middle;
+    padding: 5px 10px;
+    margin: 20px 50px 20px 25px;
+    border: 1px black solid;
+    box-shadow: 5px 5px 5px darkslategrey;
+    background-color: #205537;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.wrapper p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.redText {
+    color: red;
+    font-weight: bold;
+}
+.blueText {
+    color: #0419DA;
+    font-weight: bold;
+}
+.greenText {
+    color: darkgreen;
+    font-weight: bold;
+}
