@@ -68,10 +68,15 @@ td {
     border: 1px black solid;
     border-radius: 5px;
     box-shadow: 5px 5px 5px darkslategrey;
-    background-color: #205537;
     font-size: 20px;
     font-weight: bold;
     color: white;
+}
+.wrapper button.add {
+    background-color: #205537;
+}
+.wrapper button.remove {
+    background-color: red;
 }
 .wrapper p {
     display: inline-block;
