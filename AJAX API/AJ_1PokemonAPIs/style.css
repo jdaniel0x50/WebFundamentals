@@ -1,0 +1,79 @@
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0px none;
+	outline: 0px;
+	padding: 0px;
+	margin: 0px;
+    }
+h1, h2, h3, h4 {
+    font-weight: bold;
+}
+h1, h2, h3, h4, p, a, li, input, button, form, table {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1 {
+    font-size: 38px;
+    text-align: left;
+    margin: 15px;
+}
+p, li {
+    padding: 5px 0px;
+}
+a {
+    text-decoration: none;
+    color: #04aeda;
+}
+hr {
+    height: 3px;
+    width: 65%;
+    background-color: black;
+    margin: 20px 0px;
+}
+form {
+    width: 500px;
+    text-align: right;
+}
+input {
+    border: 1px grey solid;
+    padding: 2px;
+    margin: 5px 10px;
+}
+table {
+    border: 1px black solid;
+    padding: 5px;
+    margin-bottom: 100px;
+}
+th {
+    width: 150px;
+    font-weight: bold;
+}
+td {
+    border: 0.5px grey solid;
+}
+.wrapper {
+    width: 975px;
+    margin: 0px auto;
+    padding: 20px;
+    text-align: left;
+}
+.charimg {
+    display: inline-block;
+    margin: 15px;
+}
+
+.redText {
+    color: red;
+    font-weight: bold;
+}
+.blueText {
+    color: #0419DA;
+    font-weight: bold;
+}
+.greenText {
+    color: darkgreen;
+    font-weight: bold;
+}
