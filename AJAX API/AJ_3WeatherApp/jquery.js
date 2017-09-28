@@ -26,6 +26,7 @@ $(document).ready(function () {
             $('.city').val("");
             $('.zip').val("");
             $('.city').focus();
+            console.log(res);
         })
     });
 });

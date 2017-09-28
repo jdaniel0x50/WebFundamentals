@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game Of Thrones</title>
+    <link rel='stylesheet' type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.content').hide();
+        //BOX CODE
+        $('.box').click(function(){
+            $('.content').show();
+            var houseID = $(this).attr('houseid');
+            $.get('https://www.anapioficeandfire.com/api/houses/'+houseID, function(data){
+                var pre = data;
+                console.log(data.name);
+                $('.name').text(pre.name);
+                $('.words').text(pre.words);
+                $('.titles').text('');
+                for(var i in pre.titles){
+                    if(i > 0){
+                        $('.titles').append(', ');
+                    } 
+                    $('.titles').append(pre.titles[i]); 
+                }
+            });
+        });
+
+        //SEARCH CODE
+        $('button').click(function(){
+            $('.content').show();
+            var houseName = $('#search').val().replace(/\s/g,'+');
+            var replaced = houseName.split(' ').join('+')
+            console.log('https://www.anapioficeandfire.com/api/houses?name='+houseName)
+            $.get('https://www.anapioficeandfire.com/api/houses?name='+houseName, function(data){
+                var obj = data[0];
+                console.log(data[0].name);
+                $('.name').text(obj.name);
+                $('.words').text(obj.words);
+                $('.titles').text('');
+                for(var i in obj.titles){
+                    if(i > 0){
+                        $('.titles').append(', ');
+                    } 
+                    $('.titles').append(obj.titles[i]); 
+                }
+            });
+            return false;
+        });
+    });
+ 
+    
+    
+    
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Game of Thrones Houses</h1>
+        <div class="box" houseid="362">Stark</div>
+        <div class="box" houseid="378">Targaryen</div>
+        <div class="box" houseid="229">Lannister</div>
+        <div class="box" houseid="17">Baratheon</div>
+        <form>
+            <h3>Don't See your favorite house? Search below.</h3>
+            <h4>Note:  you must search the EXACT house name as <span class="italic">"House Name of Location"</span>.</h4>
+            <h4>For a list of the full names of the Game of Thrones houses, see <a href="https://www.quora.com/What-are-the-names-of-the-noble-houses-and-the-Seven-Kingdoms-of-Westeros">here</a>.</h4>
+            <input type="search" id="search" placeholder="ex. House Stark of Winterfell">
+            <button>Search</button>
+        </form>
+        <div class="content">
+            <h1>House Details</h1>
+            <h4>Name: <span class="name"></span></h4>
+            <h4>Words: <span class="words"></span></h4>
+            <h4>Titles: <span class="titles"></span></h4>
+        </div>
+    </div>
+</body>
+</html>

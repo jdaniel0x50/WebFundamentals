@@ -1,0 +1,103 @@
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0px none;
+	outline: 0px;
+	padding: 0px;
+	margin: 0px;
+    }
+h1, h2, h3, h4 {
+    font-weight: bold;
+    text-align: left;
+}
+h1, h2, h3, h4, p, a, li, input, button, form, table, .box {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1 {
+    font-size: 38px;
+    text-align: center;
+    margin: 50px;
+}
+h2 {
+    font-size: 22px;
+    margin-top: 35px;
+}
+h3 {
+    font-size: 20px;
+    margin: 20px 0px;
+}
+h4 {
+    font-size: 16px;
+    margin: 10px 0px;
+}
+p, li {
+    padding: 5px 0px;
+}
+a {
+    text-decoration: none;
+    color: #04aeda;
+}
+hr {
+    height: 3px;
+    width: 65%;
+    background-color: black;
+    margin: 20px 0px;
+}
+input {
+    border: 1px grey solid;
+    padding: 2px;
+    margin: 30px 10px;
+}
+img {
+    display: inline-block;
+    margin: 15px;
+}
+button {
+    border: 1px darkgrey solid;
+    border-radius: 10px;
+    background-color: darkslategray;
+    color: white;
+    padding: 5px;
+}
+.wrapper {
+    width: 975px;
+    margin: 0px auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px grey solid;
+}
+.box {
+    display: inline-block;
+    vertical-align: top;
+    width: 175px;
+    height: 175px;
+    margin: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px black solid;
+    background-color: seagreen;
+}
+
+.textUnderline {
+    text-decoration: underline;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.italic {
+    font-style: italic;
+}
+.redText {
+    color: red;
+    font-weight: bold;
+}
+.blueText {
+    color: #0419DA;
+    font-weight: bold;
+}
+.greenText {
+    color: darkgreen;
+    font-weight: bold;
+}
