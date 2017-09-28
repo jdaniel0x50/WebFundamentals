@@ -17,8 +17,12 @@ h1, h2, h3, h4, p, a, li, input, button, form, table {
 }
 h1 {
     font-size: 38px;
-    text-align: left;
+    text-align: center;
     margin: 15px;
+}
+h2 {
+    margin-top: 35px;
+    text-decoration: underline;
 }
 p, li {
     padding: 5px 0px;
@@ -42,27 +46,33 @@ input {
     padding: 2px;
     margin: 5px 10px;
 }
-table {
-    border: 1px black solid;
-    padding: 5px;
-    margin-bottom: 100px;
-}
-th {
-    width: 150px;
-    font-weight: bold;
-}
-td {
-    border: 0.5px grey solid;
-}
-.wrapper {
-    width: 975px;
-    margin: 0px auto;
-    padding: 20px;
-    text-align: left;
-}
 img {
     display: inline-block;
     margin: 15px;
+}
+.wrapper {
+    width: 1050px;
+    margin: 0px auto;
+    padding: 20px;
+    text-align: left;
+    border: 1px grey solid;
+}
+.images {
+    display: inline-block;
+    width: 600px;
+    text-align: center;
+}
+.characterInfo {
+    display: inline-block;
+    vertical-align: top;
+    width: 350px;
+    margin-left: 50px;
+    text-align: center;
+    border: 5px slateblue solid;
+    padding: 10px;
+}
+.characterInfo ul {
+    list-style: none;
 }
 
 .redText {
