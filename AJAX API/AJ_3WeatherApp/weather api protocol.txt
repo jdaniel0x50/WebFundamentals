@@ -1,0 +1,6 @@
+http://api.openweathermap.org/data/2.5/forecast/daily?id=524901&APPID={INSERTAPIKEY}
+// Make sure to put your unique API key in the URL (taking out the brackets).
+// &APPID={INSERTAPIKEY} will need to be at the end of each URL you access below and in the assignment.
+
+
+My API key:  30e88e4d6348c1b24222c23008a330ea
