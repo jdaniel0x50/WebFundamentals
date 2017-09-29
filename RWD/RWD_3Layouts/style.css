@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0px none;
+	outline: 0px;
+	padding: 0px;
+	margin: 0px;
+    }
+h1, h2, h3, h4 {
+    font-weight: bold;
+}
+h1, h2, h3, h4, p, a, li, input, button, form, table {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    padding: 15px 20px;
+    background-color: tan;
+}
+h2 {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    background-color: tan;
+}
+h3 {
+    font-size: 1.1em;
+}
+a {
+    text-decoration: none;
+    color: purple;
+}
+
+/* hr {
+    height: 3px;
+    width: 65%;
+    background-color: black;
+    margin: 20px 0px;
+}
+input {
+    border: 1px grey solid;
+    padding: 2px;
+    margin: 5px 10px;
+}
+img {
+    display: inline-block;
+    margin: 15px;
+}
+button {
+    border: 1px darkgrey solid;
+    border-radius: 10px;
+    background-color: darkslategray;
+    color: white;
+    padding: 5px;
+} */
+
+.wrapper {
+    width: 98%;
+    margin: 0px auto;
+    padding: 15px;
+}
+
+ul {
+    float: left;
+    margin: 10px 0px 10px 20px;
+    width: 100%;
+}
+li {
+    float: left;
+    font-size: 0.9em;
+    list-style: none;
+    padding: .5em;
+    background-color: lightgrey;
+    border: 1px black solid;
+}
+li:not(.firstlast) {
+    margin: 0 0.5em;
+}
+li:first-of-type {
+    margin-right: 0.5em;
+}
+li:last-of-type {
+    margin-left: 0.5em;
+}
+.row { clear: both; }
+/* Small sized screens */
+@media only screen and (max-width: 480px) {
+    .four-m { width: 100%; }
+    .four-l { width: 100%; }
+}
+/* Medium sized screens */
+@media only screen and (min-width: 481px) {
+    .four-s { width: 48%; }
+    .four-w { width: 100%; }
+    .four-l { width: 100%; }
+}
+/* Medium sized screens */
+@media only screen and (min-width: 680px) {
+    .four-m { width: 31%; }
+    .four-l { width: 100%; }
+}
+@media only screen and (max-width: 950px) {
+    ul { display: none; }
+}
+/* Large sized screens */
+@media only screen and (min-width: 1024px) {
+    .four-m { width: 23% }
+    .four-l { width: 23%; }
+    .eight-l { width: 66.66666%; }
+}
+
+.column {
+    /* float: left; */
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 20px;
+}
+.row {
+    clear: both;
+}
+.content { padding: 20px; }

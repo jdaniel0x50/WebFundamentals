@@ -10,8 +10,16 @@
     <script>
     $(document).ready(function(){
         $('.content').hide();
+        function showBox(){
+            if(!$('.content').data('first')){
+                $(this).data('first', 'clicked');
+                $('.content').fadeIn();
+            }
+        }
+
         //BOX CODE
         $('.box').click(function(){
+            showBox();
             $('.content').show();
             var houseID = $(this).attr('houseid');
             $.get('https://www.anapioficeandfire.com/api/houses/'+houseID, function(data){
@@ -30,7 +38,8 @@
         });
 
         //SEARCH CODE
-        $('button').click(function(){
+        $('button.search').click(function(){
+            showBox();
             $('.content').show();
             var houseName = $('#search').val().replace(/\s/g,'+');
             var replaced = houseName.split(' ').join('+')
@@ -50,11 +59,27 @@
             });
             return false;
         });
+
+        // RANDOM CODE
+        $('button.random').click(function(){
+            showBox();
+            var randomHouse = Math.floor(Math.random() * 444) + 1;
+            console.log(randomHouse)
+                $.get('https://www.anapioficeandfire.com/api/houses/'+randomHouse.toString(), function(data){
+                    console.log(data.name);
+                    $('.name').text(data.name);
+                    $('.words').text(data.words);
+                    $('.titles').text('');
+                    for(var i in data.titles){
+                        if(i > 0){
+                            $('.titles').append(', ');
+                        } 
+                        $('.titles').append(data.titles[i]); 
+                    }
+                });
+            return false;
+        });
     });
- 
-    
-    
-    
     </script>
 </head>
 <body>
@@ -69,7 +94,8 @@
             <h4>Note:  you must search the EXACT house name as <span class="italic">"House Name of Location"</span>.</h4>
             <h4>For a list of the full names of the Game of Thrones houses, see <a href="https://www.quora.com/What-are-the-names-of-the-noble-houses-and-the-Seven-Kingdoms-of-Westeros">here</a>.</h4>
             <input type="search" id="search" placeholder="ex. House Stark of Winterfell">
-            <button>Search</button>
+            <button class="search">Search</button>
+            <button class="random">Random</button>
         </form>
         <div class="content">
             <h1>House Details</h1>
